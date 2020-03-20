@@ -1,7 +1,7 @@
 # Hazel Rules
 Some rules I created for Hazel (http://www.noodlesoft.com/hazel.php)
 
-## Markdown to PDF via pandoc-citeproc
+## Markdown to PDF via pandoc-citeproc (hazel-md-to-pdf.hazelrules)
 This rules converts markdown files to PDF via pandoc-citeproc. Drop the file in the folder for which the rule is active and hazel will activate the conversion through a script. Note that you have to modify the script according to your filepaths:
 ```script
 title=$(basename "$1" .md)
