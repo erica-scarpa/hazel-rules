@@ -8,5 +8,5 @@ title=$(basename "$1" .md)
 /usr/local/bin/pandoc -s --filter=/usr/local/bin/pandoc-citeproc --pdf-engine=/Library/TeX/texbin/xelatex --number-sections --bibliography=/PATH/TO/YOUR/BIBLIOGRAPHY.bib --csl=/PATH/TO/YOUR/CSL.csl -o "$title".pdf "$1"
 open "$title".pdf
 ```
-Replace the capitalized filepaths with yours. This scripts will also trigger sections numbering (you can remove it by deleting `--number-sections`). Pandoc and LaTeX need to be installed.
+Replace the capitalized filepaths with yours. This script will also trigger sections numbering (you can remove it by deleting `--number-sections`). Pandoc and LaTeX need to be installed.
 This script has been inspired by [this post](https://raphaelkabo.com/blog/posts/markdown-to-word/).
